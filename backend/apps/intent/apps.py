@@ -1,6 +1,5 @@
 from django.apps import AppConfig
 
-
-class LearnConfig(AppConfig):
+class IntentConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'learn'
+    name = 'apps.intent'   # ✅ 수정 완료

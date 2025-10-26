@@ -125,15 +125,21 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # jeomgeuli_backend/settings.py
 INSTALLED_APPS = [
+    # 기본 앱
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 외부 라이브러리
     'rest_framework',
     'corsheaders',
-    'intent', 'learn', 'chat', 'braille', 'review', 'common',
+
+    # 커스텀 앱
+    'apps.intent',   # ✅ 반드시 apps. 붙여야 함
+    'apps.learn',
 ]
 
 MIDDLEWARE = [

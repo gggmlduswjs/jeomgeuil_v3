@@ -20,5 +20,7 @@ from django.urls import path, include  # ✅ include 추가
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/intent/', include('intent.urls')),  # ✅ 의도 분석 API
+    path('api/intent/', include('apps.intent.urls')),  # ✅ 수정
+    path('api/learn/', include('apps.learn.urls')),    # ✅ 추가
+    path('api/braille/', include('apps.braille.urls')),   # ✅ 추가
 ]
